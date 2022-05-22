@@ -11,15 +11,18 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import fr.rolan.api.database.IDataBaseManager;
 import fr.rolan.api.game.IGameManager;
+import fr.rolan.api.game.Settings;
 import fr.rolan.api.game.game.IActifGameManager;
 import fr.rolan.api.game.lobby.ILobbyManager;
 import fr.rolan.api.game.started.IStartedManager;
 import fr.rolan.api.game.team.ITeam;
 import fr.rolan.api.game.teleportation.ITeleportationManager;
+import fr.rolan.api.gui.GuiManager;
 import fr.rolan.api.jda.IJDA;
 import fr.rolan.api.permissions.IPermissions;
 import fr.rolan.api.player.IUser;
 import fr.rolan.api.scoreboard.IScoreboardManager;
+import fr.rolan.api.stuff.IStuffManager;
 
 public abstract class UHCAPI {
 	private static UHCAPI INSTANCE;
@@ -60,6 +63,8 @@ public abstract class UHCAPI {
 	
 	public abstract IGameManager getGameManager();
 	
+	public abstract IStuffManager getStuffManager();
+	
 	public abstract ILobbyManager getLobbyManager();
 	
 	public abstract void NewLobbyManager();
@@ -77,4 +82,10 @@ public abstract class UHCAPI {
 	public abstract IActifGameManager getActifGameManager();
 	
 	public abstract void NewActifGameManager();
+	
+	public abstract Settings getSettings();
+	
+	public abstract GuiManager getGuiManager();
+
+	public abstract List<Listener> getGuis();
 }

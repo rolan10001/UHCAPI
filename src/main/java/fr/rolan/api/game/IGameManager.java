@@ -13,6 +13,10 @@ public interface IGameManager {
 	
 	public boolean isState(GameState state);
 	
+	public Settings getConfig();
+	
+	public void setConfig(Settings configuration);
+	
 	public int midDistance(Player player);
 	
 	public int playerDistance(Player player, Location loc);
@@ -22,4 +26,6 @@ public interface IGameManager {
 	public void transportion(UUID playerUUID, String message);
 	
 	public String getProgressBar(int current, int max, int totalBars, String symbol, String completedColor, String notCompletedColor);
+	
+	public void actionBar(Player player);
 }

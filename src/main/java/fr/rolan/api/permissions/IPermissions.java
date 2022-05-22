@@ -10,6 +10,4 @@ public interface IPermissions {
 	public boolean isAdmin(UUID uuid);
 	
 	public boolean isStaff(UUID uuid);
-	
-	public boolean isHost(UUID uuid);
 }

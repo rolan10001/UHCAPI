@@ -2,6 +2,9 @@ package fr.rolan.api.player;
 
 import java.util.UUID;
 
+import org.bukkit.Location;
+import org.bukkit.inventory.ItemStack;
+
 import fr.rolan.api.database.IPlayerData;
 import fr.rolan.api.game.scenario.superheroes.SuperHeroes;
 import fr.rolan.api.game.team.Teams;
@@ -55,4 +58,20 @@ public interface IUser {
 	public SuperHeroes getSuperHeroes();
 
 	public void setSuperHeroes(SuperHeroes superheroes);
+	
+	public ItemStack[] getDeathStuff();
+	
+	public ItemStack[] getDeathArmorStuff();
+	
+	public void setDeathStuff(ItemStack[] it);
+	
+	public void setDeathArmorStuff(ItemStack[] it);
+
+	public Location getDeathLoc();
+	
+	public void setDeathLoc(Location deathLoc);
+	
+	public int getArmorDeath();
+	
+	public void setArmorDeath(int armorDeath);
 }

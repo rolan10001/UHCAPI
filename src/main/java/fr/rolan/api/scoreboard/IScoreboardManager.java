@@ -1,6 +1,5 @@
 package fr.rolan.api.scoreboard;
 
-import java.lang.reflect.Field;
 import java.util.Map;
 import java.util.UUID;
 
@@ -9,7 +8,7 @@ public interface IScoreboardManager {
 	
 	public void setPlayerScoreboard(UUID uuid, String title, Map<Integer, String> map);
 	
-	public void setReplaceValue(String replace, Field value);
+	public void setReplaceValue(String replace, Object value);
 	
 	public void setTitle(String title);
 	

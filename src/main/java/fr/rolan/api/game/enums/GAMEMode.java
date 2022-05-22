@@ -1,5 +1,7 @@
 package fr.rolan.api.game.enums;
 
+import fr.rolan.api.UHCAPI;
+
 public enum GAMEMode {
 	UHC("UHC", "§6UHC"),
 	OTHER("", "");
@@ -17,6 +19,7 @@ public enum GAMEMode {
 
 	public void setName(String name) {
 		this.name = name;
+		UHCAPI.get().getSettings().MODE_NAME = name;
 	}
 
 	public String getDisplayName() {
@@ -25,5 +28,6 @@ public enum GAMEMode {
 
 	public void setDisplayName(String displayName) {
 		this.displayName = displayName;
+		UHCAPI.get().getSettings().MODE_DISPLAYNAME = displayName;
 	}
 }
