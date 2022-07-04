@@ -3,7 +3,7 @@ package fr.rolan.api.game.enums;
 import fr.rolan.api.UHCAPI;
 
 public enum GAMEMode {
-	UHC("UHC", "ง6UHC"),
+	UHC("UHC", "ยง6UHC"),
 	OTHER("", "");
 	
 	private String name, displayName;

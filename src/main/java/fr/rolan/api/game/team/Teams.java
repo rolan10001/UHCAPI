@@ -14,22 +14,22 @@ import fr.rolan.api.player.IUser;
 import fr.rolan.api.scoreboard.IScoreboardTeam;
 
 public enum Teams {
-	BLUE("BLUE", "§9§lBLEU", "§9", "", true, 9, (byte) 4, Arrays.asList()),
-	RED("RED", "§c§lROUGE", "§c", "", true, 12, (byte) 1, Arrays.asList()),
-	YELLOW("YELLOW", "§e§lJAUNE", "§e", "", true, 14, (byte) 11, Arrays.asList()),
-	GREEN("GREEN", "§a§lVert", "§a", "", true, 10, (byte) 10, Arrays.asList()),
-	PURPLE("PURPLE", "§5§lVIOLET", "§5", "", true, 5, (byte) 5, Arrays.asList()),
-	ORANGE("ORANGE", "§6§lORANGE", "§6", "", true, 6, (byte) 14, Arrays.asList()),
-	CYAN("CYAN", "§b§lCYAN", "§b", "", true, 11, (byte) 12, Arrays.asList()),
-	PINK("PINK", "§d§lROSE", "§d", "", true, 13, (byte) 9, Arrays.asList()),
-	DARK_AQUA("DARK_AQUA", "§3§lAQUA FONCÉ", "§3", "", true, 3, (byte) 6, Arrays.asList()),
-	DARK_GREEN("DARK_GREEN", "§2§lVERT FONCÉ", "§2", "", true, 2, (byte) 2, Arrays.asList()),
-	WHITE("WHITE", "§f§lBLANC", "§f", "", true, 15, (byte) 15, Arrays.asList()),
-	GRAY("GRAY", "§7§lGRIS", "§7", "", true, 7, (byte) 7, Arrays.asList()),
-	DARK_GRAY("DARK_GRAY", "§8§lGRIS FONCÉ", "§8", "", true, 8, (byte) 8, Arrays.asList()),
-	DARK_RED("DARK_RED", "§4§lROUGE FONCÉ", "§4", "", true, 4, (byte) 1, Arrays.asList()),
-	DARK_BLUE("DARK_BLUE", "§1§lBLUE FONCÉ", "§1", "", true, 1, (byte) 4, Arrays.asList()),
-	DEFAULT("DEFAULT", "§7Default", "§7", "", true, 7, (byte) 7, Arrays.asList());
+	BLUE("BLUE", "Â§9Â§lBLEU", "Â§9", "", true, 9, (byte) 4, Arrays.asList()),
+	RED("RED", "Â§cÂ§lROUGE", "Â§c", "", true, 12, (byte) 1, Arrays.asList()),
+	YELLOW("YELLOW", "Â§eÂ§lJAUNE", "Â§e", "", true, 14, (byte) 11, Arrays.asList()),
+	GREEN("GREEN", "Â§aÂ§lVert", "Â§a", "", true, 10, (byte) 10, Arrays.asList()),
+	PURPLE("PURPLE", "Â§5Â§lVIOLET", "Â§5", "", true, 5, (byte) 5, Arrays.asList()),
+	ORANGE("ORANGE", "Â§6Â§lORANGE", "Â§6", "", true, 6, (byte) 14, Arrays.asList()),
+	CYAN("CYAN", "Â§bÂ§lCYAN", "Â§b", "", true, 11, (byte) 12, Arrays.asList()),
+	PINK("PINK", "Â§dÂ§lROSE", "Â§d", "", true, 13, (byte) 9, Arrays.asList()),
+	DARK_AQUA("DARK_AQUA", "Â§3Â§lAQUA FONCÃ‰", "Â§3", "", true, 3, (byte) 6, Arrays.asList()),
+	DARK_GREEN("DARK_GREEN", "Â§2Â§lVERT FONCÃ‰", "Â§2", "", true, 2, (byte) 2, Arrays.asList()),
+	WHITE("WHITE", "Â§fÂ§lBLANC", "Â§f", "", true, 15, (byte) 15, Arrays.asList()),
+	GRAY("GRAY", "Â§7Â§lGRIS", "Â§7", "", true, 7, (byte) 7, Arrays.asList()),
+	DARK_GRAY("DARK_GRAY", "Â§8Â§lGRIS FONCÃ‰", "Â§8", "", true, 8, (byte) 8, Arrays.asList()),
+	DARK_RED("DARK_RED", "Â§4Â§lROUGE FONCÃ‰", "Â§4", "", true, 4, (byte) 1, Arrays.asList()),
+	DARK_BLUE("DARK_BLUE", "Â§1Â§lBLUE FONCÃ‰", "Â§1", "", true, 1, (byte) 4, Arrays.asList()),
+	DEFAULT("DEFAULT", "Â§7Default", "Â§7", "", true, 7, (byte) 7, Arrays.asList());
 	
 	private String name, displayname, prefix, suffix;
 	private boolean friendlyfire;

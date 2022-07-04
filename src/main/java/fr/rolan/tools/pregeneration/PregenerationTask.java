@@ -34,7 +34,7 @@ public class PregenerationTask extends BukkitRunnable {
 		this.mx = Integer.valueOf(r.intValue()+world.getSpawnLocation().getBlockX());
 		this.mz = Integer.valueOf(r.intValue()+world.getSpawnLocation().getBlockZ());
 		this.finished = Boolean.valueOf(false);
-		Bukkit.broadcastMessage("§8[§cPregen§8] §fLancement de la pré-génération");
+		Bukkit.broadcastMessage("Â§8[Â§cPregenÂ§8] Â§fLancement de la prÃ©-gÃ©nÃ©ration");
 		runTaskTimer(UHCAPI.get().getPlugin(), 0L, 5L);
 	}
 	
@@ -56,9 +56,9 @@ public class PregenerationTask extends BukkitRunnable {
 			}
 		}
 		this.percent = Double.valueOf(this.currentChunkLoad.doubleValue() / this.totalChunkToLoad.doubleValue() * 100.0D);
-		Bukkit.getOnlinePlayers().forEach(players -> NMSMethod.sendActionbar(players, "§fPré-génération §8» [§r"+UHCAPI.get().getGameManager().getProgressBar(this.percent.intValue(), 100, 20, "|", "§c", "§f")+"§8] §c"+this.percent.intValue()+"%"));
+		Bukkit.getOnlinePlayers().forEach(players -> NMSMethod.sendActionbar(players, "Â§fPrÃ©-gÃ©nÃ©ration Â§8Â» [Â§r"+UHCAPI.get().getGameManager().getProgressBar(this.percent.intValue(), 100, 20, "|", "Â§c", "Â§f")+"Â§8] Â§c"+this.percent.intValue()+"%"));
 		if(this.finished.booleanValue()) {
-			Bukkit.broadcastMessage("§8[§cPregen§8] §fLa pré-génération est terminée !");
+			Bukkit.broadcastMessage("Â§8[Â§cPregenÂ§8] Â§fLa prÃ©-gÃ©nÃ©ration est terminÃ©e !");
 			cancel();
 		}
 	}

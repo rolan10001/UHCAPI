@@ -103,15 +103,15 @@ public class NMSMethod {
     public static String getPingColor(Player player) {
 		EntityPlayer nmsPlayer = ((CraftPlayer) player).getHandle();
 		if(nmsPlayer.ping < 80) {
-			return String.valueOf("งa"+nmsPlayer.ping+"ms");
+			return String.valueOf("ยงa"+nmsPlayer.ping+"ms");
 		}else if(nmsPlayer.ping < 120) {
-			return String.valueOf("ง2"+nmsPlayer.ping+"ms");
+			return String.valueOf("ยง2"+nmsPlayer.ping+"ms");
 		}else if(nmsPlayer.ping < 180) {
-			return String.valueOf("ง6"+nmsPlayer.ping+"ms");
+			return String.valueOf("ยง6"+nmsPlayer.ping+"ms");
 		}else if(nmsPlayer.ping < 500) {
-			return String.valueOf("งc"+nmsPlayer.ping+"ms");
+			return String.valueOf("ยงc"+nmsPlayer.ping+"ms");
 		}else {
-			return String.valueOf("ง4"+nmsPlayer.ping+"ms");
+			return String.valueOf("ยง4"+nmsPlayer.ping+"ms");
 		}
 	}
     

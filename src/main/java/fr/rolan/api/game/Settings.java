@@ -15,7 +15,7 @@ public class Settings {
 	public List<UUID> COHOST = new ArrayList<>();
 	public GAMEMode GAMEMODE = GAMEMode.UHC;
 	public String MODE_NAME = "UHC";
-	public String MODE_DISPLAYNAME = "ง6UHC";
+	public String MODE_DISPLAYNAME = "ยง6UHC";
 	public int SLOT = 30;
 	public boolean ARENA = true;
 	public int STRENGTH_VALUE = 10;

@@ -58,8 +58,8 @@ public class GuiManager {
 	public static ItemStack getArrowBack() {
 		ItemStack it = new ItemStack(Material.ARROW);
 		ItemMeta meta = it.getItemMeta();
-		meta.setDisplayName("§cRetour");
-		meta.setLore(Arrays.asList("§7Retourner au menu précédent"));
+		meta.setDisplayName("Â§cRetour");
+		meta.setLore(Arrays.asList("Â§7Retourner au menu prÃ©cÃ©dent"));
 		it.setItemMeta(meta);
 		return it;
 	}
@@ -67,7 +67,7 @@ public class GuiManager {
 	public static ItemStack getGlass() {
 		ItemStack it = new ItemStack(Material.STAINED_GLASS_PANE, 1, (byte) 15);
 		ItemMeta meta = it.getItemMeta();
-		meta.setDisplayName("§7");
+		meta.setDisplayName("Â§7");
 		it.setItemMeta(meta);
 		return it;
 	}
